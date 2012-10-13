@@ -1,0 +1,10 @@
+title Kaspersky Rescue Disk
+find --set-root /isofile/AntiVirus/kav_rescue_cd.iso
+map /isofile/AntiVirus/kav_rescue_10.iso (0xff) || map --mem /isofile/AntiVirus/kav_rescue_10.iso (0xff)
+map --hook
+root (0xff)
+chainloader (0xff)
+
+title << Back to Main Menu
+find --set-root /boot/grub/menu.lst
+configfile /boot/grub/menu.lst

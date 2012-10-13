@@ -1,0 +1,17 @@
+title Hiren's Boot CD 15.1
+find --set-root /Softwares/ISOs/WinISOs/Hirens.BootCD/Hirens.BootCD.15.1.iso
+map /Softwares/ISOs/WinISOs/Hirens.BootCD/Hirens.BootCD.15.1.iso (0xff) || map --mem /Softwares/ISOs/WinISOs/Hirens.BootCD/Hirens.BootCD.15.1.iso (0xff)
+map --hook
+root (0xff)
+chainloader (0xff)
+
+title Hiren's BootCD 10.6
+find --set-root /Softwares/ISOs/WinISOs/Hirens.BootCD/Hirens.BootCD.10.6.iso
+map /Softwares/ISOs/WinISOs/Hirens.BootCD/Hirens.BootCD.10.6.iso (0xff) || map --mem /Softwares/ISOs/WinISOs/Hirens.BootCD/Hirens.BootCD.10.6.iso (0xff)
+map --hook
+root (0xff)
+chainloader (0xff)
+
+title << Back to Main Menu
+find --set-root /boot/grub/menu.lst
+configfile /boot/grub/menu.lst

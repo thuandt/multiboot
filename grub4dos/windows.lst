@@ -1,0 +1,27 @@
+title Windows NT/2K/XP
+find --set-root --ignore-floppies --ignore-cd /ntldr
+map () (hd0)
+map (hd0) ()
+map --rehook
+find --set-root --ignore-floppies --ignore-cd /ntldr
+chainloader /ntldr
+
+title Windows Vista/Seven
+find --set-root --ignore-floppies --ignore-cd /bootmgr
+map () (hd0)
+map (hd0) ()
+map --rehook
+find --set-root --ignore-floppies --ignore-cd /bootmgr
+chainloader /bootmgr
+
+title Recovery Console of Windows NT/2K/XP
+find --set-root --ignore-floppies --ignore-cd /cmldr
+map () (hd0)
+map (hd0) ()
+map --rehook
+find --set-root --ignore-floppies --ignore-cd /cmldr
+chainloader /cmldr
+
+title << Back to Main Menu
+find --set-root /boot/grub/menu.lst
+configfile /boot/grub/menu.lst

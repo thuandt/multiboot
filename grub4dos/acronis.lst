@@ -1,0 +1,24 @@
+title Acronis Disk Director Advanced
+find --set-root /isofile/Acronis/Acronis.Disk.Director.v11.Advanced.iso
+map /isofile/Acronis/Acronis.Disk.Director.v11.Advanced.iso (0xff) || map --mem /isofile/Acronis/Acronis.Disk.Director.v11.Advanced.iso (0xff)
+map --hook
+root (0xff)
+chainloader (0xff)
+
+title Acronis Disk Director Home
+find --set-root /isofile/Acronis/Acronis.Disk.Director.v11.Home.iso
+map /isofile/Acronis/Acronis.Disk.Director.v11.Home.iso (0xff) || map --mem /isofile/Acronis/Acronis.Disk.Director.v11.Home.iso (0xff)
+map --hook
+root (0xff)
+chainloader (0xff)
+
+title Acronis True Image Home 2013
+find --set-root /isofile/Acronis/Acronis.True.Image.Home.2013.Plus.Pack.iso
+map /isofile/Acronis/Acronis.True.Image.Home.2013.Plus.Pack.iso (0xff) || map --mem /isofile/Acronis/Acronis.True.Image.Home.2013.Plus.Pack.iso (0xff)
+map --hook
+root (0xff)
+chainloader (0xff)
+
+title << Back to Main Menu
+find --set-root /boot/grub/menu.lst
+configfile /boot/grub/menu.lst
