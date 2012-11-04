@@ -1,1 +1,53 @@
-../boot/grub/menu.lst
+# /boot/grub/menu.lst
+# Grub4Dos config file
+# Last Modified: Fri 11 May 2012 05:59:40 PM ICT
+
+color blue/green yellow/red white/magenta white/magenta
+timeout -1
+default 0
+
+title Boot from Hard Drive
+map (hd1) (hd0)
+map --hook
+rootnoverify (hd0)
+root (hd0,0)
+chainloader (hd0,0)+1
+
+title Grub2
+find --set-root /boot/grub/core.img
+kernel /boot/grub/core.img
+boot
+
+title Norton Ghost 11.5
+find --set-root /isofile/NortonGhost/NortonGhost.11.5.iso
+map /isofile/NortonGhost/NortonGhost.11.5.iso (0xff) || map --mem /isofile/NortonGhost/NortonGhost.11.5.iso (0xff)
+map --hook
+root (0xff)
+chainloader (0xff)
+
+title Hiren's Boot CD
+find --set-root /configfile/grub4dos/HBCD.lst
+configfile /configfile/grub4dos/HBCD.lst
+
+title AntiVirus Rescue CD
+find --set-root /configfile/grub4dos/antivirus.lst
+configfile /configfile/grub4dos/antivirus.lst
+
+title Acronis Utilities
+find --set-root /configfile/grub4dos/acronis.lst
+configfile /configfile/grub4dos/acronis.lst
+
+title Load Windows
+find --set-root /configfile/grub4dos/windows.lst
+configfile /configfile/grub4dos/windows.lst
+
+title Grub4Dos CLI
+commandline
+
+title Reboot
+reboot
+
+title Halt
+halt
+
+## End of file #####
