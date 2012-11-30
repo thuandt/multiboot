@@ -1,6 +1,6 @@
-title Hiren's Boot CD 15.1
-find --set-root /Softwares/ISOs/WinISOs/Hirens.BootCD/Hirens.BootCD.15.1.iso
-map /Softwares/ISOs/WinISOs/Hirens.BootCD/Hirens.BootCD.15.1.iso (0xff) || map --mem /Softwares/ISOs/WinISOs/Hirens.BootCD/Hirens.BootCD.15.1.iso (0xff)
+title Hiren's Boot CD 15.2
+find --set-root /Softwares/ISOs/WinISOs/Hirens.BootCD/Hirens.BootCD.15.2.iso
+map /Softwares/ISOs/WinISOs/Hirens.BootCD/Hirens.BootCD.15.2.iso (0xff) || map --mem /Softwares/ISOs/WinISOs/Hirens.BootCD/Hirens.BootCD.15.2.iso (0xff)
 map --hook
 root (0xff)
 chainloader (0xff)
