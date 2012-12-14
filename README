@@ -1,4 +1,14 @@
 HDD/USB Multiboot
 =================
 
-Config file of grub2 and grub4dos
+This repository contains config files of grub2 and grub4dos used to create
+multiboot USB/HDD for some GNU/Linux distributions
+
+
++ Ubuntu (12.04 & 12.10)
++ SystemRescueCd
++ Debian (netinstall with preseed)
++ LinuxMint
++ GParted Live
++ PartedMagic
++ CloneZilla
