@@ -11,4 +11,4 @@ multiboot USB/HDD for some GNU/Linux distributions
 + LinuxMint
 + GParted Live
 + PartedMagic
-+ CloneZilla
++ CloneZilla (include of PartedMagic)
