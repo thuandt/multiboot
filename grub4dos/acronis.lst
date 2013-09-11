@@ -12,9 +12,16 @@ map --hook
 root (0xff)
 chainloader (0xff)
 
-title Acronis True Image Home 2013
+title Acronis True Image Home 2013 with Plus Pack
 find --set-root /isofile/Acronis/Acronis.True.Image.Home.2013.Plus.Pack.iso
 map /isofile/Acronis/Acronis.True.Image.Home.2013.Plus.Pack.iso (0xff) || map --mem /isofile/Acronis/Acronis.True.Image.Home.2013.Plus.Pack.iso (0xff)
+map --hook
+root (0xff)
+chainloader (0xff)
+
+title Acronis True Image Home 2014 Premium
+find --set-root /isofile/Acronis/Acronis.True.Image.Home.2014.Premium.iso
+map /isofile/Acronis/Acronis.True.Image.Home.2014.Premium.iso (0xff) || map --mem /isofile/Acronis/Acronis.True.Image.Home.2014.Premium.iso (0xff)
 map --hook
 root (0xff)
 chainloader (0xff)
