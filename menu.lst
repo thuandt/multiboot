@@ -14,8 +14,8 @@ root (hd0,0)
 chainloader (hd0,0)+1
 
 title Grub2
-find --set-root /boot/grub/core.img
-kernel /boot/grub/core.img
+find --set-root /boot/grub/i386-pc/core.img
+kernel /boot/grub/i386-pc/core.img
 boot
 
 title Norton Ghost 11.5
